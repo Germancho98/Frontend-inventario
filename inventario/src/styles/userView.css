@@ -1,0 +1,110 @@
+/* src/styles/userView.css */
+.user-view {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff; /* Fondo blanco */
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 250px; /* Ancho del sidebar */
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fijar el sidebar */
+    height: 100vh; /* Altura completa */
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px; /* Deja espacio para el sidebar */
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 123, 255, 0.8); /* Fondo con transparencia */
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    width: calc(100% - 40px); /* Ajustar el ancho para el padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    position: relative; /* Necesario para el menú desplegable */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el perfil */
+    margin-left: auto; /* Mueve el ícono de perfil al lado derecho */
+}
+
+.user-info span {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white; /* Color del texto */
+}
+
+.user-info .dropdown-menu {
+    display: none; /* Ocultar el menú por defecto */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+    min-width: 150px; /* Ancho mínimo del menú */
+}
+
+.user-info:hover .dropdown-menu {
+    display: block; /* Mostrar el menú al pasar el cursor */
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f8f9fa;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+.logout-button span {
+    margin-left: 10px;
+}

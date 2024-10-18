@@ -1,0 +1,134 @@
+/* src/styles/productView.css */
+.product-view {
+  padding: 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #007bff;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.product-form label {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.product-form input,
+.product-form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.product-form input:focus,
+.product-form select:focus {
+  border-color: #007bff;
+}
+
+.product-form .stock-alert-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ff0000; /* Color rojo para resaltar */
+}
+
+.product-form .stock-alert-label span {
+  font-size: 14px;
+  color: #666; /* Color gris para el texto adicional */
+}
+
+.product-form button {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.product-form button:hover {
+  background-color: #0056b3;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.product-table th {
+  background-color: #f2f2f2;
+}
+
+.product-table td {
+  font-size: 14px;
+  padding: 5px;
+}
+
+.product-table th,
+.product-table td {
+  white-space: nowrap;
+}
+
+.product-table th {
+  font-size: 14px;
+}
+
+.product-table td button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}

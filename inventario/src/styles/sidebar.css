@@ -1,0 +1,61 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(51, 51, 51, 0.9); /* Fondo con transparencia */
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados para un toque sutil */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a, .sidebar ul li button {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s, transform 0.3s;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar ul li a:hover, .sidebar ul li button:hover {
+  color: #ffcc00; /* Color de resaltado al pasar el cursor */
+  transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+.sidebar ul li a svg, .sidebar ul li button svg {
+  margin-right: 10px;
+  font-size: 20px;
+}

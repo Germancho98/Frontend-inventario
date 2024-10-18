@@ -1,0 +1,47 @@
+/* src/styles/stockAlertModal/* src/styles/stockAlertModal/* src/styles/stockAlertModal.css */
+.stock-alert-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000; /* Asegúrate de que el overlay esté en el frente */
+}
+.stock-alert-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 1001; /* Asegúrate de que el modal esté en el frente */
+  border: 2px solid red; /* Borde rojo para la alerta */
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid red; /* Línea roja en el header */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.close-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: red; /* Botón de cierre rojo */
+}
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+.modal-content li {
+  padding: 10px 0;
+  border-bottom: 1px solid red; /* Línea roja en los elementos de la lista */
+  color: red; /* Texto rojo para los elementos de la lista */
+}

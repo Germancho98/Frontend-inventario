@@ -1,0 +1,85 @@
+/* src/styles/movementView.css */
+.movement-view {
+  padding: 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.movement-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.movement-form label {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.movement-form input,
+.movement-form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.movement-form input:focus,
+.movement-form select:focus {
+  border-color: #007bff;
+}
+
+.movement-form button {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.movement-form button:hover {
+  background-color: #0056b3;
+}
+
+.movement-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.movement-table th,
+.movement-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.movement-table th {
+  background-color: #f2f2f2;
+}
+
+.movement-table td {
+  font-size: 14px;
+  padding: 5px;
+}
+
+.movement-table th,
+.movement-table td {
+  white-space: nowrap;
+}
+
+.movement-table th {
+  font-size: 14px;
+}
